@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Online Courses</title>
+  </head>
+
+  <body>
+    <header class="whole-header">
+      <div class="top-header">
+        <div class="Amphitheater">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="https://goo.gl/maps/SWFKMYmGRomaD4Y9A" target="_blank"
+            >1600 Amphitheater Parkway, CA 94043</a
+          >
+        </div>
+        <div class="header-email">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:vctung@outlook.com" target="_blank">vctung@outlook.com</a>
+        </div>
+        <div class="header-icons">
+          <div>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navigation-bar">
+        <div class="for-education-div">
+          <a class="education" href="index.html">
+            <img class="logo" src="images/logo.svg" alt="logo" />
+            <h2 class="for-education">FOR EDUCATION</h2>
+          </a>
+        </div>
+        <ul class="nav-bar">
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="about-us"><a href="#">About</a></li>
+          <li class="courses"><a href="#">Courses</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+        <button class="sign-up">Sign up</button>
+      </nav>
+    </header>
+
+    <!--first Section-->
+
+    <section class="section-1">
+      <div class="wrapper">
+        <div class="section-1-titles">
+          <div class="h2-div">
+            <h2 class="become-master">Become Master</h2>
+          </div>
+
+          <div class="h1">
+            <h1 class="learn-new-skills">
+              Learn New Skills Online Find Best Courses
+            </h1>
+          </div>
+
+          <div class="button-wrapper">
+            <div class="button-get-a-quote">
+              <button class="get-a-quote">Get A Quote</button>
+            </div>
+
+            <div class="button-read-more">
+              <button class="read-more">Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytic">
+          <img src="images/Analytic.png" alt="Analytic" />
+        </div>
+      </div>
+    </section>
+
+    <!--Second Section-->
+
+    <section class="section-2">
+      <div class="main-background-div">
+        <div class="graphite"></div>
+        <div class="white"></div>
+        <div class="python-course">
+          <div class="image">
+            <img src="images/Section-2-Success.svg" alt="Success" />
+          </div>
+          <div class="upcoming-course-div">
+            <h2 class="upcoming-course">
+              Upcoming Our
+              <span class="yellow-words">Basic in Python</span> Course!
+            </h2>
+          </div>
+
+          <div>
+            <p id="timer" class="timer"></p>
+
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Jul 30, 2022 15:37:25").getTime();
+
+              // Update the count down every 1 second
+              var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="timer"
+                document.getElementById("timer").innerHTML =
+                  days +
+                  " : " +
+                  hours +
+                  " : " +
+                  minutes +
+                  " : " +
+                  seconds +
+                  " ";
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("timer").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
+          </div>
+          <div class="timer-text">
+            <div class="days"><span>Days</span></div>
+            <div class="hours"><span>Hours</span></div>
+            <div class="minutes"><span>Minutes</span></div>
+            <div class="seconds"><span>Seconds</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--third section-->
+
+    <section class="section-3">
+      <div class="section-3-wrapper">
+        <div class="section-3-h2">
+          <h2 class="top-featured-courses">Top Featured Courses</h2>
+        </div>
+
+        <div class="nine-pack-wrapper">
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block1-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block1-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>User Research for User Experience Design</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>The Museum of Modern Art</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block2-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block2-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>Buddhism and Modern Psychology</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>The Museum of Modern Art</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block3-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block3-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>Introduction to Philosophy</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>Duke University</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block4-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block4-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>Advance on Seeing Through Photographs</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>Duke University</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block5-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block5-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>Think Again I: How to Understand Arguments</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>The Museum of Modern Art</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block6-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block6-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>User Research for User Experience Design</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>The Museum of Modern Art</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block7-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block7-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>User Research for User Experience Design</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>The Museum of Modern Art</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block8-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block8-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>Introduction to Logic and Critical Thinking</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>Duke University</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="image-block">
+              <img src="images/block9-image.svg" alt="image" />
+            </div>
+            <div class="mini-image">
+              <img src="images/block9-mini-image.svg" alt="image" />
+            </div>
+            <div class="mini-text-div">
+              <div class="mini-text1">
+                <h3>Modern and Contemporary Art and Design</h3>
+              </div>
+              <div class="mini-text2">
+                <h3>The Museum of Modern Art</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- forth section -->
+
+    <section class="section-4">
+      <div class="section-4-main-div">
+        <div class="section-4-wrapper">
+          <div class="first-block-wrapper">
+            <div class="section-4-first-block-mini-image">
+              <img src="images/section-4-mini-image.svg" alt="" />
+            </div>
+            <div class="picture-div">
+              <img src="images/Successful-student.png" alt="image" />
+            </div>
+            <div class="section-4-first-block-text">
+              <div class="kimmie-vo"><span>Kimmie Vo</span></div>
+              <div class="junior-designer"><span>Junior Designer</span></div>
+            </div>
+          </div>
+
+          <div class="second-block-wrapper">
+            <div class="successful-student">
+              <h2>Successful Student <span>Feedback</span></h2>
+            </div>
+            <div class="second-block-text">
+              <p>
+                Take courses from the world’s best instructors and universities.
+                Courses include recorded auto-graded and peer-reviewed
+                assignments, video lectures, and community discussion forums.
+                When you complete a course, you’ll be eligible to receive a
+                shareable electronic Course Certificate for a small fee.
+              </p>
+            </div>
+
+            <div class="second-block-h3">
+              <h3>The courses that Kimmie has taken</h3>
+            </div>
+
+            <div class="second-block-mini-div">
+              <div class="mini-div-image">
+                <img
+                  src="images/section-4-second-block-mini-image.svg"
+                  alt="image"
+                />
+              </div>
+              <div class="second-block-mini-div-background">
+                <div class="second-block-mini-div-h3">
+                  <h3>Modern and Contemporary Art and Design</h3>
+                </div>
+                <div class="second-block-mini-div-h4">
+                  <h4>The Museum of Modern Art</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fifth section -->
+
+    <section class="section-5">
+      <div class="section-5-main-div">
+        <div class="section-5-wrapper">
+          <div class="section-5-first-block">
+            <div class="section-5-first-block-1">
+              <img src="images/section-5-first-block-image.svg" alt="image" />
+            </div>
+            <div class="section-5-first-block-2">
+              <span class="numbers-768">768</span>
+            </div>
+            <div class="section-5-first-block-3">
+              <span class="courses-published">COURSES PUBLISHED</span>
+            </div>
+          </div>
+
+          <div class="section-5-first-block">
+            <div class="section-5-first-block-1">
+              <img src="images/section-5-second-block-image.svg" alt="image" />
+            </div>
+            <div class="section-5-first-block-2">
+              <span class="numbers-768">120</span>
+            </div>
+            <div class="section-5-first-block-3">
+              <span class="courses-published">EXPERT INSTRUCTORS</span>
+            </div>
+          </div>
+
+          <div class="section-5-first-block">
+            <div class="section-5-first-block-1">
+              <img src="images/section-5-thhird-block-image.svg" alt="image" />
+            </div>
+            <div class="section-5-first-block-2 different-text-block">
+              <span class="numbers-768">8,300</span>
+            </div>
+            <div class="section-5-first-block-3">
+              <span class="courses-published">HAPPY LEARNERS</span>
+            </div>
+          </div>
+
+          <div class="section-5-first-block">
+            <div class="section-5-first-block-1">
+              <img src="images/section-5-forth-block-image.svg" alt="image" />
+            </div>
+            <div class="section-5-first-block-2">
+              <span class="numbers-768">32</span>
+            </div>
+            <div class="section-5-first-block-3">
+              <span class="courses-published">AWARDS ACHIEVED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sixth section -->
+
+    <section class="section-6">
+      <div class="section-6-main-div">
+        <div class="section-6-wrapper">
+          <div class="section-6-image-block">
+            <img src="images/Recruiting.svg" alt="image" />
+          </div>
+          <div class="section-6-second-block">
+            <div class="section-6-mini-block1"><span>Subscribe now</span></div>
+            <div class="section-6-mini-block2">
+              <span>Get every single update you will get</span>
+            </div>
+            <div class="section-6-mini-block3">
+              <div class="search-bar-div"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-main-block">
+        <div class="footer-wrapper">
+          <div class="footer-first-mainblock">
+            <div class="footer-block1">
+              <div class="footer-mini-image">
+                <img src="images/For-education.svg" alt="image" />
+              </div>
+              <div><span>FOR EDUCATION</span></div>
+            </div>
+            <div class="footer-block2">
+              <div>
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <a
+                    href="https://goo.gl/maps/9iZtKUN3y9kuMVN18"
+                    target="_blank"
+                    >1500 Treat Ave, Suite 200 San Francisco, CA 94110</a
+                  >
+                </div>
+              </div>
+
+              <div>
+                <div><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <a href="mailto:vctung@outlook.com" target="_blank"
+                    >vctung@outlook.com</a
+                  >
+                </div>
+              </div>
+
+              <div>
+                <div><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <a href="tel:1-800-800-2299" target="_blank"
+                    >1-800-800-2299 (support)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-block3">
+            <div class="community">
+              <h5>Community</h5>
+            </div>
+            <div class="community-list">
+              <span>Learners</span>
+              <span>Partners</span>
+              <span>Developers</span>
+              <span>Beta Testers</span>
+              <span>Translators</span>
+              <span>Blog</span>
+              <span>Tech Blog</span>
+              <span>Teaching Center</span>
+            </div>
+          </div>
+
+          <div class="footer-block4">
+            <div class="informations">
+              <h5>Informations</h5>
+            </div>
+            <div class="informations-list">
+              <span>About</span>
+              <span>Pricing</span>
+              <span>Blog</span>
+              <span>Careers</span>
+              <span>Contact</span>
+            </div>
+          </div>
+
+          <div class="footer-block5">
+            <div class="more">
+              <h5>More</h5>
+            </div>
+            <div class="more-list">
+              <span>Press</span>
+              <span>Investors</span>
+              <span>Terms</span>
+              <span>Privacy</span>
+              <span>Help</span>
+              <span>Accessibility</span>
+              <span>Contact</span>
+              <span>Articles</span>
+              <span>Directory</span>
+              <span>Affiliates</span>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+
+          <div class="bottom-footer">
+            <div class="bottom-footer-text">
+              <span>Copyright © 2021 Tung Chi Vo</span>
+            </div>
+
+            <div class="bottom-footer-icons">
+              <div>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://www.pinterest.com" target="_blank"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://instagram.com" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
