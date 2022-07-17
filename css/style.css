@@ -68,6 +68,8 @@
 .navigation-bar {
     display: flex;
     align-items: center;
+    max-width: 1920px;
+    width: 100%;
     max-height: 100px;
     background-color: #F0F4F9;
     /* position: fixed;
@@ -270,7 +272,9 @@
 
 .main-background-div {
     max-width: 1920px;
-    max-height: 198px;
+    width: 100%;
+    height: 198px;
+    position: relative;
     
 }
 
@@ -288,7 +292,7 @@
 
 .python-course {
     position: absolute;
-    top: 688px;
+    top: 0;
     left: 375px;
     width: 1170px;
     height: 198px;
@@ -782,6 +786,74 @@
     margin-bottom: 26px;
 }
 
+.section-6-mini-block3 {
+    max-width: 570px;
+    width: 100%;
+    height: 56px;
+    margin-top: 26px;
+}
+
+.input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.section-6-mini-block3 > div > i {
+    position: absolute;
+    z-index: 2;
+    margin-top: 27px;
+    margin-left: 3px;
+    
+    
+}
+  
+.section-6-mini-block3 {
+    position: relative;
+    z-index: 1;
+}
+
+.section-6-mini-block3 > div > input {
+    height: 56px;
+    position: relative;
+    font-family: inter;
+    font-weight: normal;
+    font-size: 16px;    
+    color: #BDBDBD;
+}
+
+
+.subscribe-now {
+    width: 164px;
+    height: 44px;
+    background-color: #FDC800;
+    color: #002147;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 13px;
+    margin-right: 3px;
+    
+    /* margin-left: 60px; */
+    
+}
+
+.subscribe-now:hover {
+    background-color: #ddd;
+    transition: all 0.5s linear;
+}
 
 /* footer */
 
