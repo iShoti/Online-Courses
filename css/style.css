@@ -4,6 +4,11 @@
     
 } */
 
+body {
+    padding-top: 124px;
+    
+}
+
 .top-header {
     max-width: 1920px;
     width: 100%;
@@ -59,8 +64,17 @@
   flex-direction: row;
   display: flex;
   margin-left: 15px;
-  color: #212529;   
-  }
+  color: #212529;
+  border-radius: 3px;
+  transition: 0.3s ease-in; 
+}
+
+.header-icons > div:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    background-color: #ff2c2c;      
+}
 
 
 /* navigation   */
@@ -72,8 +86,14 @@
     width: 100%;
     max-height: 100px;
     background-color: #F0F4F9;
-    /* position: fixed;
-    width: 100%; */
+    
+}
+
+.whole-header {
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 .for-education {
@@ -146,7 +166,8 @@
 }
 
 .sign-up {
-    width: 115px;
+    max-width: 115px;
+    width: 100%;
     height: 44px;
     background-color: #FDC800;
     color: #002147;
@@ -182,6 +203,7 @@
 
 .section-1-titles {
     max-width: 770px;
+    width: 100%;
     margin-left: 375px;
     padding-top: 104px;
     
@@ -189,6 +211,7 @@
 
 .wrapper {
     max-width: 1920px;
+    width: 100%;
     height: 540px;
     background-color: #F0F4F9;
     display: flex;
@@ -204,6 +227,8 @@
 }
 
 .h1 {
+    max-width: 770px;
+    width: 100%;
     margin-bottom: 24px;
 }
 
@@ -224,7 +249,8 @@
 }
 
 .get-a-quote {
-    width: 181px;
+    max-width: 181px;
+    width: 100%;
     height: 54px;
     background-color: #FDC800;
     color: #002147;
@@ -235,6 +261,7 @@
     font-family: inter;
     font-weight: 500;
     font-size: 16px;
+    margin-right: 15px;
 }
 
 .get-a-quote:hover {
@@ -242,7 +269,8 @@
 }
 
 .read-more {
-    width: 181px;
+    max-width: 181px;
+    width: 100%;
     height: 54px;
     background-color: #FFFFFF;
     color: #002147;
@@ -285,16 +313,18 @@
 }
 
 .white {
+    max-width: 1920px;
     width: 100%;
     height: 92px;
-    background-color: #FDC800;
+    /* background-color: #FDC800; */
 }
 
 .python-course {
     position: absolute;
     top: 0;
     left: 375px;
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     height: 198px;
     background-color: #002147;
     border-radius: 12px;
@@ -308,7 +338,8 @@
 }
 
 .upcoming-course-div {
-    width: 404px;
+    max-width: 404px;
+    width: 100%;
     height: 70px;
 }
 
@@ -372,17 +403,20 @@
 
 
 .section-3-wrapper {
-    width: 1920px;
-    height: 1312px;    
+    max-width: 1920px;
+    width: 100%;
+    height: 1312px;
+        
     
 }
 
 .section-3-h2 {
     display: flex;
     justify-content: center;
-    /* width: 770px; */
+    width: 100%;
     height: 50px;
     margin-top: 80px;
+    
 }
 
 .top-featured-courses {
@@ -394,7 +428,8 @@
 }
 
 .nine-pack-wrapper {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     height: 1053px;
     display: flex;
     justify-content: space-between;
@@ -418,7 +453,8 @@
 }
 
 .image-block {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 200px;
 }
 
@@ -429,7 +465,8 @@
 }
 
 .mini-text-div {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 131px;
     border-style: solid;
     border-width: thin;
@@ -440,7 +477,8 @@
 }
 
 .mini-text1 {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 48px;
     margin-left: 18px;
     margin-top: 36px;
@@ -452,7 +490,8 @@
 }
 
 .mini-text2 {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 17px;
     margin-left: 18px;
     margin-top: 6px;
@@ -467,12 +506,14 @@
 /* forth section */
 
 .section-4-main-div {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     height: 630px;
     /* background-color: #929292; */
 }
 .section-4-wrapper {
-    width: 1141px;
+    max-width: 1141px;
+    width: 100%;
     display: flex;    
     justify-content: space-between;
     margin: 0 auto;
@@ -481,7 +522,8 @@
 
 
 .first-block-wrapper {
-    width: 541px;
+    max-width: 541px;
+    width: 100%;
     height: 404px;
     margin-top: 114px;
     margin-bottom: 112px;
@@ -497,13 +539,15 @@
 }
 
 .second-block-wrapper {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     margin-top: 114px;
     margin-bottom: 112px;
 }
 
 .successful-student {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     height: 115px;
     margin-bottom: 16px;
 }
@@ -526,7 +570,8 @@
 }
 
 .second-block-text {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     height: 116px;
     margin-bottom: 24px;
 }
@@ -540,7 +585,8 @@
 }
 
 .second-block-h3 {
-    width: 453px;
+    max-width: 453px;
+    width: 100%;
     height: 20px;
     margin-bottom: 16px;
 }
@@ -555,13 +601,15 @@
 
 .second-block-mini-div {
     display: flex;
-    width: 574px;
+    max-width: 574px;
+    width: 100%;
     height: 97px;
     position: relative;
 }
 
 .second-block-mini-div-background {
-    width: 511px;
+    max-width: 511px;
+    width: 100%;
     height: 97px;
     border-style: solid;
     border-radius: 6px;
@@ -578,7 +626,8 @@
 }
 
 .second-block-mini-div-h3 {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 20px;
     margin-bottom: 10px;
     
@@ -593,7 +642,8 @@
 }
 
 .second-block-mini-div-h4 {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 17px;
 }
 
@@ -614,7 +664,8 @@
 
 .section-4-first-block-text {
     position: absolute;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 77px;
     background-color: #fff;
     border-top-left-radius: 6px;
@@ -630,7 +681,8 @@
 }
 
 .kimmie-vo {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 24px;
     margin-bottom: 4px;
     text-align: center;
@@ -645,7 +697,8 @@
 }
 
 .junior-designer {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 17px;
     text-align: center;
 }
@@ -663,7 +716,8 @@
 
 
 .section-5-main-div {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     height: 481px;
     background-color: #F0F4F9;
     background-image: url(../images/section-5-background-image.svg);
@@ -672,7 +726,8 @@
 }
 
 .section-5-wrapper {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     height: 301px;
     padding-top: 80px;
     display: flex;    
@@ -683,7 +738,8 @@
 }
 
 .section-5-first-block {
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     height: 301px;
     display: flex;
     flex-direction: column;
@@ -693,19 +749,22 @@
 }
 
 .section-5-first-block-1 {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     height: 200px;
     
 }
 
 .section-5-first-block-2 {
-    width: 112px;
+    max-width: 112px;
+    width: 100%;
     height: 68px;
     text-align: center;
 }
 
 .different-text-block {
-    width: 182px;
+    max-width: 182px;
+    width: 100%;
     height: 68px;
     text-align: center;
 }
@@ -718,7 +777,8 @@
     color: #002147;
 }
 .section-5-first-block-3 {
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     height: 20px;
     text-align: center;
 }
